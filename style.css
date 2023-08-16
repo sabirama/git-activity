@@ -1,0 +1,10 @@
+.c-item {
+  height: 400px;
+}
+.c-image {
+  filter: brightness(0.6);
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
