@@ -13,3 +13,15 @@
   object-fit: cover;
   z-index: -1;
 }
+
+.image-about {
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+}
+
+about-content{
+  
+}
