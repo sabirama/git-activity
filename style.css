@@ -19,9 +19,56 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
-
 }
 
-about-content{
-  
+about-content {
+}
+
+.contact {
+  background-image: url(Anguib-Beach-Cagayan.jpg);
+  background-size: cover;
+  justify-content: left;
+  background-color: springgreen;
+  padding: 50px 0;
+  border-radius: 0 40px 40px;
+  margin: 40px auto;
+}
+
+.contact form {
+  width: 1000px;
+  margin: auto;
+}
+
+.contact form input,
+.contact form textarea {
+  border: none;
+  border-radius: 20px;
+  resize: none;
+}
+
+.contact label {
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px 0;
+  padding: 0 20px;
+}
+
+.submit {
+  width: fit-content;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.footer {
+  background-color: rgba(128, 128, 128, 0.711);
+}
+
+.footer div input {
+  width: 100%;
+  background: none;
+  margin-bottom: 10px;
+}
+
+.footer div button {
+  border: none;
 }
