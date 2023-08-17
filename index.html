@@ -1,107 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-warning">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-warning">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="boracay-carousel.jpg"
+            class="d-block w-100 c-image"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">
+              It's More fun in the Philippines!
+            </p>
+            <p class="display-1 fw-bolder text-capitalize">Boracay Island</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="palawan-carousel.jpg"
+            class="d-block w-100 c-image"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">
+              It's More fun in the Philippines!
+            </p>
+            <p class="display-1 fw-bold text-capitalize">Palawan</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="terraces-carousel.jpg"
+            class="d-block w-100 c-image"
+            alt="..."
+          />
+          <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+            <p class="mt-5 fs-3 text-uppercase">
+              It's More fun in the Philippines!
+            </p>
+            <p class="display-1 fw-bold text-capitalize">
+              Banaue Rice Terraces
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="about">
+      <h1 class="text-center">About Philippines Destinations</h1>
+      <div class="about-content">
+        <img src="ph1.png" class="image-about" />
+
+        <p>
+          Our meticulously crafted travel guides provide you with in-depth
+          information, insider tips, and detailed itineraries to help you make
+          the most of your Philippine adventure. Whether you're a solo
+          backpacker, a family seeking a memorable vacation, or a couple in
+          search of a romantic getaway, our guides cater to all types of
+          travelers.
+        </p>
+
+        <p>
+          Immerse yourself in the beauty of the Philippines through stunning
+          visuals and captivating narratives. We showcase the best of each
+          destination, from the iconic landmarks to hidden gems, so you can plan
+          your journey with excitement and anticipation.
+        </p>
+      </div>
+    </section>
+
+    <div class="card" style="width: 18rem">
+      <img src="card1.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <p class="card-text">
+          Providing information about tourist destination in the philippines.
+        </p>
       </div>
     </div>
-  </nav>
 
-  <!-- carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active c-item">
-        <img src="boracay-carousel.jpg" class="d-block w-100 c-image" alt="...">
-        <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-          <p class="mt-5 fs-3 text-uppercase">It's More fun in the Philippines!</p>
-          <p class="display-1 fw-bolder text-capitalize">Boracay Island</p>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="palawan-carousel.jpg" class="d-block w-100 c-image" alt="...">
-        <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-          <p class="mt-5 fs-3 text-uppercase">It's More fun in the Philippines!</p>
-          <p class="display-1 fw-bold text-capitalize">Palawan</p>
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="terraces-carousel.jpg" class="d-block w-100 c-image" alt="...">
-        <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-          <p class="mt-5 fs-3 text-uppercase">It's More fun in the Philippines!</p>
-          <p class="display-1 fw-bold text-capitalize">Banaue Rice Terraces</p>
-        </div>
+    <div class="card" style="width: 18rem">
+      <img src="card2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <p class="card-text">
+          Giving ideas for travellers what to do and where to visit.
+        </p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <section class="about">
-    <h1 class="text-center">About Philippines Destinations</h1>
-    <div class="about-content">
-      <img src="ph1.png" class="image-about">
-
-    <p>Our meticulously crafted travel guides provide you with in-depth information, insider tips, and detailed itineraries to help you make the most of your Philippine adventure. Whether you're a solo backpacker, a family seeking a memorable vacation, or a couple in search of a romantic getaway, our guides cater to all types of travelers.</p>
-
-    <p>Immerse yourself in the beauty of the Philippines through stunning visuals and captivating narratives. We showcase the best of each destination, from the iconic landmarks to hidden gems, so you can plan your journey with excitement and anticipation.</p>
-    </div>
-    
-  </section>
-
-  <div class="card" style="width: 18rem;">
-<img src="card1.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <p class="card-text">Providing information about tourist destination in the philippines.</p>
-</div>
-</div>
-
-<div class="card" style="width: 18rem;">
-<img src="card2.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <p class="card-text">Giving ideas for travellers what to do and where to visit.</p>
-</div>
-</div>
-
-section class="contact container">
+    <section class="contact container">
       <form action="" class="d-flex flex-column container-s">
         <label>Name</label>
         <input type="text" class="m-2" />
@@ -175,8 +251,5 @@ section class="contact container">
       </div>
       <p class="text-center p-3">&copy; 2023. All Rights Reserved</p>
     </footer>
-
-
-</body>
-  
+  </body>
 </html>
